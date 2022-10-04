@@ -1,0 +1,34 @@
+.wavy_letters {
+  height: 100px;
+  position: fixed;
+  top: 40%;
+  left: 100px;
+  z-index: 100;
+  overflow: hidden; /* hidden residual */
+
+
+
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  animation-name: animation_for_letter;
+  position: relative;
+  font-weight: 400;
+  font-family:'Poppins';
+  font-size: 52px;
+  /* animation-duration: 2s; */
+
+}
+
+
+
+@keyframes animation_for_letter {
+  0% {
+    transform: translate(0, 105%) translate3d(0, 0, 0) rotate(30deg);
+  }
+  100% {
+    transform: translate(0) translate3d(0, 0, 0) rotate(0deg);
+  }
+}
