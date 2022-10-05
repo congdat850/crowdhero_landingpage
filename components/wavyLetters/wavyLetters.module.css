@@ -1,17 +1,8 @@
 .wavy_letters {
-  top: 40%;
-  left: 100px;
-
   height: 100px;
-
   z-index: 100;
-
-  /* padding-right: 10px; */
   padding-bottom: 10px;
-
-  position: fixed;
   overflow: hidden; /* hidden residual */
-
 }
 
 .letter {
@@ -20,9 +11,6 @@
   display: inline-block;
   animation-name: animation_for_letter;
   bottom: 0px;
-  /* font-weight: 400;
-  font-family:'Poppins';
-  font-size: 52px; */
 }
 
 
