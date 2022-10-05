@@ -51,7 +51,7 @@ export default function Home() {
 
         <span className={styles.logo_main}>
           <Image
-            src="/test3.gif"
+            src="/CrowdHero.gif"
             alt="Vercel Logo"
             width={1280}
             height={720}
