@@ -1,13 +1,31 @@
-// import Head from "next/head";
-
 import styles from "./wavyLetters.module.css";
-// import styles from "../styles/Home.module.css";
 
 export default function WavyLetters(props) {
-  const { word } = props;
+  const { word, timeDuration, fontWeight, fontFamily, fontSize ,marginLeft} = props;
 
-  const renderWord = word.split("").map((letter,index) => {
-    return <div className={styles.letter} style = {{animationDuration:`${(index+1)*0.6}s`}}>{letter}</div>;
+  const styleProps = {
+    fontWeight: fontWeight || 'normal',
+    fontFamily: fontFamily || "Lausanne-Regular,sans-serif",
+    fontSize: fontSize || "52px",
+    // marginLeft: marginLeft || "1px"
+  };
+
+  let time = timeDuration || 0;
+
+  const renderWord = word.split("").map((letter, index) => {
+    index % 10 === 0 && time++;
+    letter === " " && (letter = <span style={{ marginLeft: "13px", display:"inline-block" }}></span>);
+
+    const timeDuration = `${time}.${index}`;
+    return (
+      <div
+        key={index}
+        className={styles.letter}
+        style={{ animationDuration: `${timeDuration}s`, ...styleProps }}
+      >
+        {letter}
+      </div>
+    );
   });
 
   return <div className={styles.wavy_letters}>{renderWord}</div>;

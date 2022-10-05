@@ -1,25 +1,28 @@
 .wavy_letters {
-  height: 100px;
-  position: fixed;
   top: 40%;
   left: 100px;
+
+  height: 100px;
+
   z-index: 100;
+
+  /* padding-right: 10px; */
+  padding-bottom: 10px;
+
+  position: fixed;
   overflow: hidden; /* hidden residual */
-
-
 
 }
 
 .letter {
-  display: inline-block;
   position: relative;
-  animation-name: animation_for_letter;
-  position: relative;
-  font-weight: 400;
-  font-family:'Poppins';
-  font-size: 52px;
-  /* animation-duration: 2s; */
 
+  display: inline-block;
+  animation-name: animation_for_letter;
+  bottom: 0px;
+  /* font-weight: 400;
+  font-family:'Poppins';
+  font-size: 52px; */
 }
 
 
