@@ -50,7 +50,7 @@ export default function Home() {
         </div>
 
         <span className={styles.logo_main}>
-          <Image src="/Crowd5.gif" alt="Vercel Logo" width={1280} height={720} />
+          <Image src="/crowdHero.gif" alt="Vercel Logo" width={1280} height={720} />
         </span>
       </div>
     </div>
