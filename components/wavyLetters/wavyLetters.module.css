@@ -1,6 +1,6 @@
 .wavy_letters {
   height: 100px;
-  z-index: 100;
+  z-index: 70;
   padding-bottom: 10px;
   overflow: hidden; /* hidden residual */
 }

@@ -13,7 +13,7 @@
   top: 0px;
   right: 0px;
   position: fixed;
-  z-index: 100;
+  z-index: 70;
 }
 
 .logo_main {
@@ -41,13 +41,57 @@
   }
 }
 
-.main {
+.logo_klabs {
+  position: relative;
+  animation-name: animation_logo_klabs;
+  animation-duration: 2s;
+  /* right: -320px; */
+  /* float: right; */
+  /* height: 720px;
+  width: 1280px; */
+}
+@keyframes animation_logo_klabs {
+  0% {
+    /* right: -320px; */
+    top: 1000px;
+  }
+  75% {
+    /* right: -320px; */
+    animation-play-state: paused;
+    top: -10px;
+  }
+
+  100% {
+    /* right: -320px; */
+    top: 0px;
+  }
+}
+.scroll {
+  width: 100%;
+  z-index: 1000;
+  background-color: royalblue;
+  height: 1000px;
+  overflow: scroll;
+  position: fixed;
+  opacity: 0;
 }
 
 .information {
-  z-index: 1000;
+  z-index: 10;
   top: 35%;
   left: 80px;
-
+  animation-name: animation_hidden;
+  /* animation-delay: 3s; */
+  animation-duration: 2s;
   position: fixed;
+}
+
+@keyframes animation_hidden {
+  0% {
+    height: auto;
+  }
+  100% {
+    overflow: hidden;
+    visibility: hidden;
+  }
 }
